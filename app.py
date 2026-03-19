@@ -74,7 +74,7 @@ def get_model(vision=False):
     if not key:
         return None
     genai.configure(api_key=key)
-    model_name = "gemini-2.0-flash"
+    model_name = "gemini-1.5-flash-latest"
     return genai.GenerativeModel(model_name)
 
 def need_key():
