@@ -42,7 +42,7 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
   <h1>🤖 CTR 품질팀 AI 비서</h1>
-  <p>영어 메일 · PDF · 도면 분석 · Tesla 회의 대응 가이드</p>
+  <p>영어 메일 · PDF · 도면 분석 · 회의 대응 가이드</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -74,7 +74,7 @@ def get_model(vision=False):
     if not key:
         return None
     genai.configure(api_key=key)
-    model_name = "gemini-2.5-flash"
+    model_name = "models/gemini-1.5-flash"
     return genai.GenerativeModel(model_name)
 
 def need_key():
